@@ -1,100 +1,319 @@
 <!DOCTYPE html>
-<html>
-  <!--Author: Krishna Adhikari
-        Github: github.com/krishna-adk
-        Facebook: facebook.com/forkhaki
-    -->
-  <head>
-    <title>Welcome To Krishna's Site</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="images/Iconslogo/rsz_logo_1-150x150.png" />
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Pribadi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Beranda</a>
+                <a href="#education" class="nav-link">Pendidikan</a>
+                <a href="#basketball" class="nav-link">Basket</a>
+                <a href="#photography" class="nav-link">Fotografi</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <style>
-      html,body{
-          background:#000;
-          margin:0;
-      }
-      .centered{
-          width:400px;
-          height:400px;
-          position:absolute;
-          top:50%;
-          left:50%;
-          transform:translate(-50%,-50%);
-          background:#000;
-          filter: blur(10px) contrast(20);
-      }
-      .circle-1,.circle-2{
-          width:70px;
-          height:70px;
-          position:absolute;
-          background:#fff;
-          border-radius:50%;
-          top:50%;left:50%;
-          transform:translate(-50%,-50%);
-      }
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Selamat Datang di Portfolio Saya</h1>
+                    <p>Saya adalah seorang pelajar di bidang teknologi yang passionate dalam coding, fotografi, dan basket</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary">Jelajahi Portfolio</button>
+                        <button class="btn-secondary">Hubungi Saya</button>
+                    </div>
+                </div>
+                <div class="hero-slider">
+                    <div class="slider-container">
+                        <div class="slide active">
+                            <img src="https://picsum.photos/400/300?random=1" alt="Coding">
+                            <div class="slide-overlay">
+                                <h3>Coding</h3>
+                                <p>Passion dalam mengembangkan teknologi</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://picsum.photos/400/300?random=2" alt="Photography">
+                            <div class="slide-overlay">
+                                <h3>Fotografi</h3>
+                                <p>Menangkap momen indah dalam hidup</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://picsum.photos/400/300?random=3" alt="Basketball">
+                            <div class="slide-overlay">
+                                <h3>Basket</h3>
+                                <p>Olahraga yang mengajarkan kerja sama</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                        <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      /*
-      The below code will animate the circle balls using css animation
-      */
-      .circle-1{
-          left:20%;
-          animation:osc-l 1.5s ease-in infinite;
-          background-color: #fff;
-      }
-      .circle-2{
-          left:80%;
-          animation:osc-r 1.5s ease-in infinite;
-          background: #2b2;
-      }
-      @keyframes osc-l{
-          0%{left:20%;}
-          50%{left:50%;}
-          100%{left:20%;}
-      }
-      @keyframes osc-r{
-          0%{left:80%;}
-          50%{left:50%;}
-          100%{left:80%;}
-      }
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Pendidikan & Pengalaman</h2>
+            
+            <!-- Education Description -->
+            <div class="education-description">
+                <div class="education-text">
+                    <h3>Latar Belakang Pendidikan</h3>
+                    <p>Saya adalah seorang pelajar yang fokus pada bidang teknologi informasi. Dengan semangat untuk terus belajar dan berkembang, saya mendalami berbagai aspek teknologi modern dan programming.</p>
+                </div>
+            </div>
 
-      .text h1{
-          color: aliceblue;
-          top: 55%;
-          position: absolute;
-          left: 45%;
-          font-weight: bold;
-      }
-      .text h1:after{
-          content: ".";
-          position: absolute;
-          animation: caret infinite;
-          animation-duration: 1.5s;
-          animation-timing-function: steps(20, end);
-      }
+            <!-- Timeline Card -->
+            <div class="timeline-card">
+                <h3>Perjalanan Hidup</h3>
+                <div class="timeline-slider">
+                    <div class="timeline-container">
+                        <div class="timeline-item past">
+                            <div class="timeline-content">
+                                <h4>Masa Lalu</h4>
+                                <p>Seorang siswa biasa yang masih mencari passion dalam hidup</p>
+                                <span class="timeline-year">2018-2020</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item present">
+                            <div class="timeline-content">
+                                <h4>Saat Ini</h4>
+                                <p>Aktif belajar teknologi dan mengembangkan skill programming</p>
+                                <span class="timeline-year">2021-2024</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item future">
+                            <div class="timeline-content">
+                                <h4>Masa Depan</h4>
+                                <p>Menjadi developer profesional dan berkontribusi untuk teknologi</p>
+                                <span class="timeline-year">2025+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Education Diagram -->
+            <div class="education-diagram">
+                <h3>Diagram Pendidikan</h3>
+                <div class="diagram-container">
+                    <div class="education-level">
+                        <div class="level-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>SD</h4>
+                            <p>Dasar-dasar pendidikan</p>
+                        </div>
+                        <div class="level-item">
+                            <i class="fas fa-school"></i>
+                            <h4>SMP</h4>
+                            <p>Pengembangan minat</p>
+                        </div>
+                        <div class="level-item active">
+                            <i class="fas fa-laptop-code"></i>
+                            <h4>SMA/SMK</h4>
+                            <p>Fokus Teknologi</p>
+                        </div>
+                        <div class="level-item future">
+                            <i class="fas fa-university"></i>
+                            <h4>Universitas</h4>
+                            <p>Spesialisasi IT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      @keyframes caret {
-          0%, 100% {
-            opacity: 0;
-          }
-          50% {
-            opacity: 1;
-          }
-        }
-    </style>
-  </head>
-  <body>
-    <div class="centered">
-      <div class="circle-1"></div>
-      <div class="circle-2"></div>
-    </div>
-    <div class="text"><h1>Loading&nbsp;</h1></div>
-    <script>
-      //The below script changes the page to home after 2.3s using timeout function.
-      setTimeout(function () {
-        window.location.href = "home.html";
-      }, 2300);
-    </script>
-  </body>
+    <!-- Basketball Section -->
+    <section id="basketball" class="basketball">
+        <div class="basketball-bg"></div>
+        <div class="container">
+            <h2 class="section-title">Passion untuk Basket</h2>
+            
+            <!-- Basketball Quote -->
+            <div class="basketball-quote">
+                <h3>"Basketball is not just a game, it's a way of life"</h3>
+                <p>- Michael Jordan</p>
+            </div>
+
+            <!-- Basketball Photo Slider -->
+            <div class="basketball-slider">
+                <div class="basketball-slider-container">
+                    <div class="basketball-slide active">
+                        <img src="https://picsum.photos/600/400?random=10" alt="Basketball 1">
+                        <div class="basketball-slide-content">
+                            <h4>Tim Work</h4>
+                            <p>"Talent wins games, but teamwork and intelligence win championships"</p>
+                        </div>
+                    </div>
+                    <div class="basketball-slide">
+                        <img src="https://picsum.photos/600/400?random=11" alt="Basketball 2">
+                        <div class="basketball-slide-content">
+                            <h4>Never Give Up</h4>
+                            <p>"I've missed more than 9000 shots in my career, but I never stopped shooting"</p>
+                        </div>
+                    </div>
+                    <div class="basketball-slide">
+                        <img src="https://picsum.photos/600/400?random=12" alt="Basketball 3">
+                        <div class="basketball-slide-content">
+                            <h4>Practice Makes Perfect</h4>
+                            <p>"Hard work beats talent when talent doesn't work hard"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basketball-slider-nav">
+                    <button class="basketball-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="basketball-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Basketball Experience Cards -->
+            <div class="basketball-cards">
+                <div class="basketball-card">
+                    <img src="https://picsum.photos/300/200?random=13" alt="Experience 1">
+                    <div class="card-content">
+                        <h4>Tournament Sekolah</h4>
+                        <p>Meraih juara 2 dalam turnamen basket antar sekolah</p>
+                    </div>
+                </div>
+                <div class="basketball-card">
+                    <img src="https://picsum.photos/300/200?random=14" alt="Experience 2">
+                    <div class="card-content">
+                        <h4>Tim Ekstrakurikuler</h4>
+                        <p>Aktif sebagai anggota tim basket sekolah</p>
+                    </div>
+                </div>
+                <div class="basketball-card">
+                    <img src="https://picsum.photos/300/200?random=15" alt="Experience 3">
+                    <div class="card-content">
+                        <h4>Community League</h4>
+                        <p>Berpartisipasi dalam liga basket komunitas lokal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photography Section -->
+    <section id="photography" class="photography">
+        <div class="photography-bg"></div>
+        <div class="container">
+            <h2 class="section-title">Dunia Fotografi</h2>
+            
+            <!-- Photography Quote -->
+            <div class="photography-quote">
+                <h3>"Photography is the art of making memories visible"</h3>
+                <p>Setiap foto memiliki cerita yang indah untuk diceritakan</p>
+            </div>
+
+            <!-- Photography Cards Grid -->
+            <div class="photography-grid">
+                <div class="photo-card">
+                    <img src="https://picsum.photos/400/300?random=20" alt="Photo 1">
+                    <div class="photo-overlay">
+                        <h4>Landscape</h4>
+                        <p>Keindahan alam dalam setiap frame</p>
+                    </div>
+                </div>
+                <div class="photo-card">
+                    <img src="https://picsum.photos/400/300?random=21" alt="Photo 2">
+                    <div class="photo-overlay">
+                        <h4>Portrait</h4>
+                        <p>Menangkap ekspresi dan emosi</p>
+                    </div>
+                </div>
+                <div class="photo-card">
+                    <img src="https://picsum.photos/400/300?random=22" alt="Photo 3">
+                    <div class="photo-overlay">
+                        <h4>Street Photography</h4>
+                        <p>Kehidupan sehari-hari yang penuh makna</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photography Description Cards -->
+            <div class="photography-description">
+                <div class="description-card">
+                    <div class="description-image">
+                        <img src="https://picsum.photos/250/200?random=23" alt="Gallery 1">
+                    </div>
+                    <div class="description-content">
+                        <h4>Koleksi Alam</h4>
+                        <p>Kumpulan foto landscape dan nature yang menampilkan keindahan alam Indonesia. Setiap foto diambil dengan teknik yang berbeda untuk menghasilkan mood yang unik.</p>
+                    </div>
+                </div>
+                <div class="description-card">
+                    <div class="description-image">
+                        <img src="https://picsum.photos/250/200?random=24" alt="Gallery 2">
+                    </div>
+                    <div class="description-content">
+                        <h4>Momen Berharga</h4>
+                        <p>Dokumentasi berbagai momen penting dan kegiatan sehari-hari. Fotografi sebagai cara untuk mengabadikan kenangan yang tak ternilai harganya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p><i class="fas fa-envelope"></i> email@example.com</p>
+                    <p><i class="fas fa-phone"></i> +62 123 456 789</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Portfolio</h3>
+                    <p>Terima kasih telah mengunjungi portfolio saya</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Portfolio Pribadi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
